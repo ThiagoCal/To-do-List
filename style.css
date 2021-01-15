@@ -1,0 +1,156 @@
+body {
+    background-image: linear-gradient(50deg, rgb(20, 59, 90),rgb(26, 86, 136));
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    
+}
+
+
+header, form {
+    display: flex;
+    min-height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+form input, form button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    background: white;
+    color: darkslategray;
+}
+
+form button{
+    color: grey ;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover{
+    background: grey ;
+    color: white;
+} 
+
+
+.select {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color:rgb(26, 86, 136);
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    -moz-appearance:none; 
+    -webkit-appearance:none; 
+    appearance:none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.select::after {
+    content: "\25bc";
+    position: absolute;
+    color: rgb(26, 86, 136);
+    top: 7px;
+    right: 5px;
+    pointer-events: none;
+}
+
+.select:hover::after {
+    color: #583429;
+}
+
+.todo_container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.todo_list {
+    min-width: 40%;
+    list-style: none;
+}
+
+.todo {
+    background: whitesmoke;
+    color: #0000;
+    display: flex;
+    margin: 5px auto;
+    font-size: 1.2;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+    border-radius: 5px;
+}
+
+.todo li {
+    flex: 1;
+    color: darkslategrey;
+    font-size: 1.2em;
+    font-weight: 60%;
+}
+
+
+
+.delete_btn {
+    padding: 0.5em;
+    background: #194a66;
+    color: rgb(196, 59, 49);
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+.complete_btn{
+    padding: 0.5em;
+    color: rgb(22, 39, 92);
+    border: 1px solid black;
+    border-radius: 10px 10px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 5px;
+    background: rgb(206, 207, 224);
+    display:block;
+}
+
+.complete_btn:hover{
+    background: white;
+    color:green;
+}
+
+.complete_btn:active{
+    background: white;
+    color:green;
+    border-radius: 10px 10px;
+}
+
+.delete_btn:active{
+    background: brown;
+}
+
+.fa-trash, 
+.fa-check{
+    pointer-events: none;
+}
+
+.completedItem {
+    opacity: 0.5;
+    transform: scale(0.96);
+    
+
+}
+
+.fall{
+    transform: translateY(4rem) scale(0.4) rotateZ(20deg);
+    opacity: 0;
+}
